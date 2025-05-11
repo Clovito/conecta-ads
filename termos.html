@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Ads - Agência de Marketing Digital</title>
+    <!-- Adiciona o favicon (pode ser .ico, .png, .svg, etc) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .calendar-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .calendar-container.active {
+            max-height: 600px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="container mx-auto px-4 py-3 flex flex-col sm:flex-row justify-center sm:justify-between items-center">
+              <div class="flex items-center justify-center sm:justify-start">
+                  <a href="index.html">
+                      <img src="logo.png" alt="Conecta Ads" class="h-9 w-auto">
+                  </a>
+              </div>
+          </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+                <a href="index.html#services" class="text-gray-700 hover:text-indigo-600 font-medium">Serviços</a>
+                <a href="index.html#about" class="text-gray-700 hover:text-indigo-600 font-medium">Empresa</a>
+                <a href="blog.html" class="text-gray-700 hover:text-indigo-600 font-medium">Blog</a>
+                <a href="index.html#contact" class="text-gray-700 hover:text-indigo-600 font-medium">Contato</a>
+            </nav>
+            <button class="md:hidden text-gray-700" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
+          <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
+          <a href="index.html#services" class="text-gray-700 hover:text-indigo-600 font-medium">Serviços</a>
+          <a href="index.html#about" class="text-gray-700 hover:text-indigo-600 font-medium">Empresa</a>
+          <a href="blog.html" class="text-gray-700 hover:text-indigo-600 font-medium">Blog</a>
+          <a href="index.html#contact" class="text-gray-700 hover:text-indigo-600 font-medium">Contato</a>
+        </div>
+    </header>
+
+    
+        </head>
+        <body class="bg-gray-50 text-gray-800">       
+          <main class="py-12">
+          
+    <!-- Conteúdo Principal -->
+    <main class="max-w-4xl mx-auto py-2 px-4">
+        <h1 class="text-3xl font-bold text-indigo-600 mb-6">Termos e Serviços</h1>
+        <p class="text-sm text-gray-500 mb-8">Última atualização: 10 de maio de 2025</p>
+    
+        <!-- Seções -->
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">1. Objetivo dos Serviços</h2>
+          <p>
+            A Conecta Ads oferece soluções de marketing digital personalizadas, incluindo, mas não se limitando a:
+            gestão de tráfego pago, SEO, redes sociais, websites e branding. Nosso objetivo é impulsionar a presença digital e os resultados dos nossos clientes.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">2. Aceitação dos Termos</h2>
+          <p>
+            Ao contratar qualquer serviço da Conecta Ads, o cliente declara ter lido, compreendido e aceito integralmente estes termos. As atualizações são de responsabilidade do cliente.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">3. Contratação e Pagamento</h2>
+          <p>
+            Os serviços são formalizados mediante proposta ou contrato. O início ocorre após confirmação do pagamento. Atrasos superiores a 5 dias podem gerar suspensão dos serviços.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">4. Prazos e Entregas</h2>
+          <p>
+            Os prazos são acordados previamente. Alterações no escopo podem impactar cronograma e custos. Atrasos causados pelo cliente não são de nossa responsabilidade.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">5. Obrigações do Cliente</h2>
+          <p>
+            O cliente deve fornecer todas as informações solicitadas, aprovar entregas nos prazos definidos e respeitar os canais de comunicação estipulados.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">6. Propriedade Intelectual</h2>
+          <p>
+            Após o pagamento integral, os materiais desenvolvidos pertencem ao cliente. A agência pode exibir trabalhos em seu portfólio, salvo solicitação contrária.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">7. Confidencialidade</h2>
+          <p>
+            Ambas as partes comprometem-se a manter o sigilo sobre informações confidenciais trocadas durante o projeto.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">8. Cancelamento e Reembolso</h2>
+          <p>
+            O cliente pode cancelar os serviços com aviso prévio de 15 dias. Não há reembolso proporcional de serviços mensais iniciados ou etapas entregues.
+          </p>
+        </section>
+    
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">9. Limitação de Responsabilidade</h2>
+          <p>
+            A agência não garante resultados específicos, mas aplicará boas práticas para alcançar os objetivos contratados. Decisões alteradas pelo cliente são de sua responsabilidade.
+          </p>
+        </section>
+           
+        <section class="mb-8">
+          <h2 class="text-xl font-semibold mb-2">10. Contato e Suporte</h2>
+          <p>
+            Em caso de dúvidas ou solicitações, entre em contato:  
+            <br>📧 <a href="mailto:contato@conecta-ads.site" class="text-indigo-600 underline">contato@conecta-ads.site</a>  
+            <br>📱 WhatsApp: +81 090 1273 2412
+          </p>
+        </section>
+      </main>
+
+ 
+  <div class="mt-2 flex flex-col sm:flex-row justify-center gap-4 text-indigo-600">
+    <a href="termos_conecta_ads.pdf" download class="hover:underline">📄 Baixar Termos e Serviços (PDF)</a>
+  </div>
+  </footer>
+
+</body>
+</html>
+
+  </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-3">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Conecta <span class="text-indigo-400">Ads</span></h3>
+                    </div>
+                    <p class="text-gray-400">Conectando sua marca ao futuro através de estratégias digitais inteligentes e resultados mensuráveis.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">Gestão de Tráfego</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">SEO</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">Design & Branding</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">E-mail Marketing</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">Social Midia</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition duration-300">Serviços</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition duration-300">Empresa</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition duration-300">Contato</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Inscreva-se para receber nossas novidades e dicas exclusivas.</p>
+                    <form action="https://formsubmit.co/clovitojapan@gmail.com" method="POST" class="flex">
+                        <input type="hidden" name="_subject" value="Novo assinante da newsletter - Footer">
+                        <input type="email" name="email" placeholder="Seu e-mail" required class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 w-full">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/Obrigado.html">
+                        <button type="submit" class="bg-indigo-600 text-white px-4 rounded-r-lg hover:bg-indigo-700 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Conecta Ads. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="termos.html" class="text-gray-400 hover:text-white transition duration-300 text-sm">Termos de Serviço</a>
+                    <a href="privacidade.html" class="text-gray-400 hover:text-white transition duration-300 text-sm">Política de Privacidade</a>
+                    <a href="cookies.html" class="text-gray-400 hover:text-white transition duration-300 text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Appointment calendar toggle
+        document.getElementById('show-calendar').addEventListener('click', function() {
+            const calendar = document.getElementById('calendar-container');
+            calendar.classList.toggle('active');
+            
+            // Set minimum date to today
+            const today = new Date();
+            const dd = String(today.getDate()).padStart(2, '0');
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const yyyy = today.getFullYear();
+            const minDate = yyyy + '-' + mm + '-' + dd;
+            
+            document.getElementById('appointment-date').setAttribute('min', minDate);
+        });
+
+        // Set final date and time before form submission
+        document.getElementById('confirm-appointment').addEventListener('click', function(e) {
+            const date = document.getElementById('appointment-date').value;
+            const time = document.getElementById('appointment-time').value;
+            
+            if (!date || !time) {
+                e.preventDefault();
+                alert('Por favor, selecione uma data e horário para o agendamento.');
+                return;
+            }
+            
+            document.getElementById('final-date').value = date;
+            document.getElementById('final-time').value = time;
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
